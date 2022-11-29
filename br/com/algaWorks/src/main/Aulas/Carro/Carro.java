@@ -7,6 +7,12 @@ public class Carro extends Proprietario {
     private String cor;
     private int anoDeFabricacao;
 
+    void alterarModelo(String modelo) {
+        if (modelo != null) {
+            this.modelo = modelo;
+        }
+    }
+
     public String getFabricante() {
         return fabricante;
     }
