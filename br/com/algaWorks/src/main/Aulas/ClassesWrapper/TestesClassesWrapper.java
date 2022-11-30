@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.Aulas.ClassesWrapper;
+package br.com.algaWorks.src.main.Aulas.classesWrapper;
 
 public class TestesClassesWrapper {
     public static void main(String[] args) {
