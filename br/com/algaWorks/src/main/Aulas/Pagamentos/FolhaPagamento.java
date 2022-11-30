@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.Aulas.Pagamentos;
+package br.com.algaWorks.src.main.Aulas.pagamentos;
 
 public class FolhaPagamento {
 
