@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.Aulas.IMC;
+package br.com.algaWorks.src.main.Aulas.imc;
 
 import java.util.Scanner;
 
