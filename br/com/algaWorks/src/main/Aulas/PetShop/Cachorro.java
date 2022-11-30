@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.Aulas.PetShop;
+package br.com.algaWorks.src.main.Aulas.petShop;
 
 public class Cachorro {
 
