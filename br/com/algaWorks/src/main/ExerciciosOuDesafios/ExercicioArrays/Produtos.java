@@ -5,7 +5,7 @@
 
 // Você, programador que está ficando bem conhecido no país pelas habilidades em Java, foi chamado para desenvolver esse software.
 
-package br.com.algaWorks.src.main.ExerciciosOuDesafios.ExercicioArrays;
+package br.com.algaWorks.src.main.exerciciosOuDesafios.exercicioArrays;
 
 public class Produtos {
 

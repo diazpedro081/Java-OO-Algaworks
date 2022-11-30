@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.ExerciciosOuDesafios.ExercicioArrays;
+package br.com.algaWorks.src.main.exerciciosOuDesafios.exercicioArrays;
 
 import java.util.Scanner;
 
