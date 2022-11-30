@@ -1,7 +1,7 @@
-package br.com.algaWorks.src.main.Aulas.PassiarCachorro;
+package br.com.algaWorks.src.main.Aulas.passiarCachorro;
 
-import br.com.algaWorks.src.main.Aulas.Carro.Proprietario;
-import br.com.algaWorks.src.main.Aulas.PetShop.Cachorro;
+import br.com.algaWorks.src.main.Aulas.carro.Proprietario;
+import br.com.algaWorks.src.main.Aulas.petShop.Cachorro;
 
 public class Pessoa{
 

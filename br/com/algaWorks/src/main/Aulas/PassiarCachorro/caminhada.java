@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.Aulas.PassiarCachorro;
+package br.com.algaWorks.src.main.Aulas.passiarCachorro;
 
 public class caminhada {
     public void andar(Pessoa pessoa) {
