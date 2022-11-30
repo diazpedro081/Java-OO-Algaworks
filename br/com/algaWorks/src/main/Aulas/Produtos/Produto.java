@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.Aulas.Produtos;
+package br.com.algaWorks.src.main.Aulas.produtos;
 
 public class Produto {
 
