@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.Aulas.Construtores;
+package br.com.algaWorks.src.main.Aulas.construtores;
 
 public class TesteConstrutor {
     public static void main(String[] args) {
