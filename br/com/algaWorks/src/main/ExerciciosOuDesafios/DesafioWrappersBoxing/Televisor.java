@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.ExerciciosOuDesafios.DesafioWrappersBoxing;
+package br.com.algaWorks.src.main.exerciciosOuDesafios.desafioWrappersBoxing;
 
 class Televisor {
     Integer canal = 130;
