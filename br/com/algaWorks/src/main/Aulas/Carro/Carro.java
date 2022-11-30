@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.Aulas.Carro;
+package br.com.algaWorks.src.main.Aulas.carro;
 
 public class Carro extends Proprietario {
 
