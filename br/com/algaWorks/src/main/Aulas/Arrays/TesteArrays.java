@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.Aulas.Arrays;
+package br.com.algaWorks.src.main.Aulas.arrays;
 
 public class TesteArrays {
     
