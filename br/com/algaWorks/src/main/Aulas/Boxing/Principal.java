@@ -1,4 +1,4 @@
-package br.com.algaWorks.src.main.Aulas.Boxing;
+package br.com.algaWorks.src.main.Aulas.boxing;
 
 public class Principal {
     
