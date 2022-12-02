@@ -1,7 +1,3 @@
-package br.com.algaWorks.src.main.exerciciosOuDesafios.desafioPacotesEnumeracoes;
-
-public class ContaPagar {
-
     private SituacaoConta situacaoConta;
 
     public ContaPagar() {
@@ -14,16 +10,3 @@ public class ContaPagar {
         } else {
             this.situacaoConta = situacaoConta.PAGA;
             System.out.println("Conta disponivel para pagamento");
-        }
-    }
-
-    public SituacaoConta getSituacaoConta() {
-        return situacaoConta;
-    }
-
-    @Override
-    public String toString() {
-        return "Conta a Pagar \nSituacao Conta: " + situacaoConta;
-    }
-
-}
