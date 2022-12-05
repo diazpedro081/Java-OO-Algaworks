@@ -6,19 +6,19 @@ class Televisor {
 
     void mudarCanal(Integer novoCanal) {
         if (canal.equals(novoCanal)) {
-            System.out.println("Novo canal é também o canal atual.");
+            System.out.println("New channel is also current channel.");
         } else {
             canal = novoCanal;
-            System.out.println("Canal alterado para " + canal);
+            System.out.println("Channel changed to: " + canal);
         }
     }
 
     void mudarVolume(Integer novoVolume) {
         if (novoVolume.equals(volume)) {
-            System.out.println("Novo volume é também o volume atual.");
+            System.out.println("New volume is also current volume.");
         } else {
             volume = novoVolume;
-            System.out.println("Volume alterado para " + volume);
+            System.out.println("Volume changed to: " + volume);
         }
     }
 
