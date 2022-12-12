@@ -1,47 +1,57 @@
 package br.com.algaWorks.src.main.exerciciosOuDesafios.desafioPolimorfismoClassesAbstratas;
 
-public abstract class Conta {
+import br.com.algaWorks.src.main.exerciciosOuDesafios.desafioJavaExcecoes.OperacaoContaException;
+import br.com.algaWorks.src.main.exerciciosOuDesafios.desafioPacotesEnumeracoes.financeiro.modelo.SituacaoConta;
 
-    private String Descricao;
-    private Double Valor;
-    private String DataVencimento;
-    private Fornecedor fornecedor;
-    private Cliente cliente;
+public class Conta {
+	
+	private String descricao;
+	private Double valor;
+	private String dataVencimento;
+	protected SituacaoConta situacaoConta;
 
-    public abstract void exibirDetalhes();
+	public Conta() {
+		this.situacaoConta = SituacaoConta.PENDENTE;
+	}
+	
+	public void cancelar() throws OperacaoContaException {
+		if (SituacaoConta.PAGA.equals(this.getSituacaoConta())) {
+			throw new OperacaoContaException("Não pode cancelar uma conta que já foi paga: " 
+				+ this.getDescricao() + ".");
+		} else if (SituacaoConta.CANCELADA.equals(this.getSituacaoConta())) {
+			throw new OperacaoContaException("Não pode cancelar uma conta que já foi cancelada: " 
+				+ this.getDescricao() + ".");
+		} else {
+			System.out.println("Cancelando conta " + this.getDescricao() + ".");
+			
+			// altera situação da conta para CANCELADA
+			this.situacaoConta = SituacaoConta.CANCELADA;
+		}
+	}
 
-    public String getDescricao() {
-        return Descricao;
-    }
-    public void setDescricao(String descricao) {
-        Descricao = descricao;
-    }
-
-    public Double getValor() {
-        return Valor;
-    }
-    public void setValor(Double valor) {
-        Valor = valor;
-    }
-
-    public String getDataVencimento() {
-        return DataVencimento;
-    }
-    public void setDataVencimento(String dataVencimento) {
-        DataVencimento = dataVencimento;
-    }
-
-    public Fornecedor getFornecedor() {
-        return fornecedor;
-    }
-    public void setFornecedor(Fornecedor fornecedor) {
-        this.fornecedor = fornecedor;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
+	public String getDescricao() {
+		return this.descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	
+	public Double getValor() {
+		return this.valor;
+	}
+	public void setValor(Double valor) {
+		this.valor = valor;
+	}
+	
+	public String getDataVencimento() {
+		return this.dataVencimento;
+	}
+	public void setDataVencimento(String dataVencimento) {
+		this.dataVencimento = dataVencimento;
+	}
+	
+	public SituacaoConta getSituacaoConta() {
+		return this.situacaoConta;
+	}
+	
 }
