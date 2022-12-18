@@ -15,7 +15,7 @@ public class ContaCorrente extends Conta {
 
     @Override
     public String toString() {
-        return "Saldo da Conta Corrente: R$" + saldo;
+        return "Current Account Balance: U$" + saldo;
     }
 
 }
