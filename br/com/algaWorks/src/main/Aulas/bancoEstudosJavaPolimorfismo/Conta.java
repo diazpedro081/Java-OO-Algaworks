@@ -17,31 +17,31 @@ public class Conta {
 
     public void sacar(double sacar) throws SaldoInsuficienteException {
         if (sacar < 3 || saldo - sacar < 0) {
-            throw new SaldoInsuficienteException("Você não pode sacar esse valor!");
+            throw new SaldoInsuficienteException("You cannot withdraw this amount!");
         } else {
             saldo = saldo - sacar;
-            System.out.println("Você sacou: R$" + sacar + ".\nSaldo atual: R$" + saldo);
+            System.out.println("you got it: R$" + sacar + ".\ncurrent balance: U$" + saldo);
         }
     }
     
     public void depositar(double deposito) {
         if (deposito < 3) {
-            throw new IllegalArgumentException("Depositos so podem ser feitos a partir de R$3.00");
+            throw new IllegalArgumentException("Deposits can only be made from U$3.00");
         } else {
             saldo = saldo + deposito;
         }
     }
 
     public void imprimirSaldo(Conta conta) {
-        System.out.println("Saldo da conta: R$" + conta.getSaldo());
+        System.out.println("Account balance: R$" + conta.getSaldo());
 
         if (conta instanceof ContaCorrente) {
             ContaCorrente contaCorrente = (ContaCorrente) conta;
-            System.out.println("O limite da Conta Corrente é R$: " + contaCorrente.getLimite());
+            System.out.println("The current account limit is U$: " + contaCorrente.getLimite());
         }
         if (conta instanceof ContaPoupanca) {
             ContaPoupanca contaPoupanca = (ContaPoupanca) conta;
-            System.out.println("Os rendimentos da conta poupanca sao de: R$" + contaPoupanca.getRendimentos());
+            System.out.println("The income from the savings account is: U$" + contaPoupanca.getRendimentos());
         }
     }
 
