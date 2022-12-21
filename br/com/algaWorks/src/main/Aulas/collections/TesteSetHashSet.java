@@ -3,6 +3,7 @@ package br.com.algaWorks.src.main.Aulas.collections;
 import java.util.HashSet;
 import java.util.Set;
 
+// não entrega a lista de objetos em ordem
 public class TesteSetHashSet {
     
     public static void main(String[] args) {

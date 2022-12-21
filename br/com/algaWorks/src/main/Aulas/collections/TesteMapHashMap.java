@@ -3,6 +3,7 @@ package br.com.algaWorks.src.main.Aulas.collections;
 import java.util.HashMap;
 import java.util.Map;
 
+//ENtrega a lista na ordem e permite inserir o mesmo objeto sendo referenciados por chaves diferentes
 public class TesteMapHashMap {
     
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class TesteMapHashMap {
         imprimirAlunos(alunos);
 
         Aluno alunoRecuperado = alunos.get("3");
-        System.out.println("aAluno de chave 3: " + alunoRecuperado.getNome());
+        System.out.println("Aluno de chave 3: " + alunoRecuperado.getNome());
     }
 
     private static void imprimirAlunos(Map<String, Aluno> alunos) {

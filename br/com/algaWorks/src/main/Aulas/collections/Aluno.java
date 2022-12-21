@@ -1,6 +1,7 @@
 package br.com.algaWorks.src.main.Aulas.collections;
 
 public class Aluno {
+    
     private String nome;
     private int idade;
     

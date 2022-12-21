@@ -3,6 +3,7 @@ package br.com.algaWorks.src.main.Aulas.collections;
 import java.util.ArrayList;
 import java.util.List;
 
+// A Ordem importa
 public class TesteListArrayList {
     public static void main(String[] args) {
 
