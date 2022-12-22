@@ -1,10 +1,10 @@
 package br.com.algaWorks.src.main.Aulas.collections;
 
 public class Aluno {
-    
+
     private String nome;
     private int idade;
-    
+
     public Aluno(String nome) {
         this.nome = nome;
     }
@@ -51,6 +51,4 @@ public class Aluno {
         return true;
     }
 
-    
-    
 }
