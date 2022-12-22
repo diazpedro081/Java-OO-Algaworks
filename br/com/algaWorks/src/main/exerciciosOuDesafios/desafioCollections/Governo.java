@@ -26,7 +26,7 @@ public class Governo {
         this.partidosPoliticos.put(partidoPolitico, politicos);
     }
 
-    public BigDecimal calcularGastosComSAlario(String partidoPolitico) {
+    public BigDecimal calcularGastosComSalario(String partidoPolitico) {
         BigDecimal total = BigDecimal.ZERO;
         List<Politico> politicos = this.partidosPoliticos.get(partidoPolitico);
 

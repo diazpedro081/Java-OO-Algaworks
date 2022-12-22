@@ -7,6 +7,11 @@ public class Cargo {
     private String descricao;
     private BigDecimal salario;
 
+    public Cargo(String descricao, BigDecimal salario) {
+        this.descricao = descricao;
+        this.salario = salario;
+    }
+    
     public String getDescricao() {
         return descricao;
     }
