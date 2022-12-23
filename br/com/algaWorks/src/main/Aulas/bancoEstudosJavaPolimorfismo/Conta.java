@@ -1,7 +1,10 @@
 package br.com.algaWorks.src.main.Aulas.bancoEstudosJavaPolimorfismo;
 
 import br.com.algaWorks.src.main.Aulas.excecoes.SaldoInsuficienteException;
-
+/**
+ * 
+ * Essa é a classe que especifica oque um objeto do tipo conta deve ter
+ */
 public class Conta {
 
     protected double saldo;
