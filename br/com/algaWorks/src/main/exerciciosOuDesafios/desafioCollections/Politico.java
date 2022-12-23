@@ -1,5 +1,8 @@
 package br.com.algaWorks.src.main.exerciciosOuDesafios.desafioCollections;
 
+/**
+ * class destinada para gerar o objeto Politico
+ */
 public class Politico {
     
     private String nome;
