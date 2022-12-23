@@ -1,6 +1,6 @@
 package br.com.algaWorks.src.main.Aulas.construtores;
 
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa>{
 
     private String nome;
     private int idade;
@@ -36,6 +36,15 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    
+    @Override
+    public int compareTo(Pessoa pessoa) {
+        return this.nome.compareTo(pessoa.getNome());
+    }
 
+    @Override
+    public String toString() {
+        return nome + ", tem " + idade + " anos";
+    }
+
+    
 }
