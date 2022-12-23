@@ -2,6 +2,9 @@ package br.com.algaWorks.src.main.exerciciosOuDesafios.desafioCollections;
 
 import java.math.BigDecimal;
 
+/**
+ * class destinada para gerar o objeto Cargo
+ */
 public class Cargo {
     
     private String descricao;
