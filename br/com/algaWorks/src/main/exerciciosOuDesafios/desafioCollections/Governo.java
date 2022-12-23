@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * class destinada para gerar o objeto Governo onde sera inserido o nome do politico e o seu resp[ectivo cargo e salario
+ */
 public class Governo {
 
     private Map<String, List<Politico>> partidosPoliticos;
