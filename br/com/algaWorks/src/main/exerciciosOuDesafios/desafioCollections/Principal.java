@@ -3,16 +3,33 @@ package br.com.algaWorks.src.main.exerciciosOuDesafios.desafioCollections;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
+
+/**
+ * 
+ * Aqui iremos inserir os dados dos politicos seu cargos salario e a qual partidio estao afiliados e por fim calcularemos o custo dos politico
+ * @author diazpedro081
+ */
 public class Principal {
+
+        /**
+         * metodo principal do programa para calcular custo por politico
+         * @param args
+         */
     public static void main(String[] args) {
         DecimalFormat formatador = new DecimalFormat("R$ #,##0.00");
 
         Governo governo = new Governo();
 
+        /**
+         * cadastrando os tipos de cargo e os salarios
+         */
         Cargo vereador = new Cargo("Vereador", new BigDecimal(16000));
         Cargo deputadoEstadual = new Cargo("Deputado Estadual", new BigDecimal(25000));
         Cargo prefeito = new Cargo("Prefeito", new BigDecimal(27000));
 
+        /**
+         * cadastrando politicos e vinculando os cargos e partidos
+         */
         Politico politico = new Politico("jão das couves", prefeito);
         governo.adicionarPolitico("RBLH", politico);
 
@@ -28,6 +45,11 @@ public class Principal {
         politico = new Politico("Sebastião Mendes", prefeito);
         governo.adicionarPolitico("PCOR", politico);
 
+
+        /**
+         * metodo criado para calcular custo por politico
+         * 
+         */
         BigDecimal gastosPcor = governo.calcularGastosComSalario("PCOR");
         System.out.println("Gastos com partido PCOR: " + formatador.format(gastosPcor.doubleValue()));
 
