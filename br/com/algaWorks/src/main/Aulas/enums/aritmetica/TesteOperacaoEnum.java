@@ -11,8 +11,5 @@ public class TesteOperacaoEnum {
         for (OperacaoAritmetica oa : OperacaoAritmetica.values()) {
             System.out.println(oa + " -> " + oa.operacao(4, 2));
         }
-
-        for (String s : args) {    
-        }
     }
 }
