@@ -14,24 +14,24 @@ public class Principal {
 	}
 	
 	public Principal() {
-		Scanner entrada = new Scanner(System.in);
+		try (Scanner entrada = new Scanner(System.in)) {
+			try {
+				System.out.println("Data do último período menstrual (dd/mm/aaaa):");
+				String ultimoPeriodoMenstrual = entrada.nextLine();
 
-		try {
-			System.out.println("Data do último período menstrual (dd/mm/aaaa):");
-			String ultimoPeriodoMenstrual = entrada.nextLine();
+				Date dataUltimoPeriodoMenstrual = this.converterEmData(ultimoPeriodoMenstrual);
+				CalculadoraGravidez calculadora = new CalculadoraGravidez(dataUltimoPeriodoMenstrual);
 
-			Date dataUltimoPeriodoMenstrual = this.converterEmData(ultimoPeriodoMenstrual);
-			CalculadoraGravidez calculadora = new CalculadoraGravidez(dataUltimoPeriodoMenstrual);
+				Date dataEstimadaConcepcao = calculadora.calcularDataEstimadaConcepcao();
+				System.out.println("Data estimada da concepção: " 
+					+ this.formatarData(dataEstimadaConcepcao));
 
-			Date dataEstimadaConcepcao = calculadora.calcularDataEstimadaConcepcao();
-			System.out.println("Data estimada da concepção: " 
-				+ this.formatarData(dataEstimadaConcepcao));
-
-			Date dataEstimadaParto = calculadora.calcularDataEstimadaParto();
-			System.out.println("Data estimada para parto: " 
-				+ this.formatarData(dataEstimadaParto));			
-		} catch (ParseException pe) {
-			System.out.println("Informe uma data no padrão dd/mm/aaaa.");
+				Date dataEstimadaParto = calculadora.calcularDataEstimadaParto();
+				System.out.println("Data estimada para parto: " 
+					+ this.formatarData(dataEstimadaParto));			
+			} catch (ParseException pe) {
+				System.out.println("Informe uma data no padrão dd/mm/aaaa.");
+			}
 		}
 	}
 	
