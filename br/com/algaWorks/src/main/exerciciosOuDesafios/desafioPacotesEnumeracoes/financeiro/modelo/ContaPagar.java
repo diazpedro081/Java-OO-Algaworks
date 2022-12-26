@@ -13,19 +13,24 @@ public class ContaPagar {
     }
 
     public void pagar() {
-        if (this.situacaoConta.equals(getSituacaoConta().PAGA) || situacaoConta.equals(getSituacaoConta().CANCELADA)) {
+        getSituacaoConta();
+        getSituacaoConta();
+        if (this.situacaoConta.equals(SituacaoConta.PAGA) || situacaoConta.equals(SituacaoConta.CANCELADA)) {
             System.out.println("Uma conta só deve ser paga se a situação atual for pendente");
         } else {
-            this.situacaoConta = situacaoConta.PAGA;
+            this.situacaoConta = SituacaoConta.PAGA;
             System.out.println("A conta foi paga");
         }
     }
 
     public void cancelar() {
-        if (this.situacaoConta.equals(getSituacaoConta().PAGA) || situacaoConta.equals(getSituacaoConta().CANCELADA)) {
+        getSituacaoConta();
+        getSituacaoConta();
+        if (this.situacaoConta.equals(SituacaoConta.PAGA) || situacaoConta.equals(SituacaoConta.CANCELADA)) {
             System.out.println("nao se pode cancelar uma conta que ja esta Cancelada/Paga");
         } else {
-            this.situacaoConta = getSituacaoConta().CANCELADA;
+            getSituacaoConta();
+            this.situacaoConta = SituacaoConta.CANCELADA;
             System.out.println("A conta foi cancelada");
         }
     }
