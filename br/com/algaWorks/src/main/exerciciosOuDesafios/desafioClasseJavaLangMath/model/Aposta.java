@@ -11,10 +11,10 @@ public class Aposta implements Pessoa{
     private int idApostador;
     
     public void geradorDeNumerosMega(){
-        Scanner entrada = new Scanner(System.in);
-        System.out.print("Digite seu nome: ");
-        setNomeApostador(entrada.nextLine());
-
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Digite seu nome: ");
+            setNomeApostador(entrada.nextLine());
+        }
         double[] numeros = new double[6];
         for(int n = 0; n < 6; n++) {
             double aleatorio = Math.random() * 60;
