@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Principal {
 
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        
-        Preco preco = new Preco();
-        System.out.print("Qual o preço do produto: ");
-        preco.setValorCusto(entrada.nextDouble());
+        try (Scanner entrada = new Scanner(System.in)) {
+            Preco preco = new Preco();
+            System.out.print("Qual o preço do produto: ");
+            preco.setValorCusto(entrada.nextDouble());
 
-        Produto produto = new Produto();
-        produto.definirPreco(preco, 20, 15);
+            Produto produto = new Produto();
+            produto.definirPreco(preco, 20, 15);
 
-        System.out.println(preco);
+            System.out.println(preco);
+        }
         
     }
     
