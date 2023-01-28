@@ -1,4 +1,4 @@
-package curso;
+package br.com.algaWorks.src.main.Aulas.arquivosProperties.src.curso;
 
 import java.io.FileInputStream;
 import java.util.Properties;
