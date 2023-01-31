@@ -1,7 +1,6 @@
-import com.google.gson.Gson;
+package br.com.algaWorks.src.main.Aulas.estudosJSON.main.src;
 
-import modelo.Cliente;
-import servico.ServicoCadastroCliente;
+import br.com.algaWorks.src.main.Aulas.estudosJSON.main.src.servico.ServicoCadastroCliente;
 
 public class TrabalhandoComJson {
 
