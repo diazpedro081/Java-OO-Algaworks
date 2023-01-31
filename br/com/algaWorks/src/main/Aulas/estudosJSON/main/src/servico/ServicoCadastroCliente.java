@@ -1,11 +1,12 @@
-package servico;
+package br.com.algaWorks.src.main.Aulas.estudosJSON.main.src.servico;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import modelo.Cliente;
-import modelo.Endereco;
-import modelo.Telefone;
+import br.com.algaWorks.src.main.Aulas.estudosJSON.main.src.modelo.Cliente;
+import br.com.algaWorks.src.main.Aulas.estudosJSON.main.src.modelo.Endereco;
+import br.com.algaWorks.src.main.Aulas.estudosJSON.main.src.modelo.Telefone;
+
 
 public class ServicoCadastroCliente {
     /*
