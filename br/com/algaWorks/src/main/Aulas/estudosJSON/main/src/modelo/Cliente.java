@@ -1,7 +1,5 @@
 package br.com.algaWorks.src.main.Aulas.estudosJSON.main.src.modelo;
 
-
-
 import java.util.List;
 
 public class Cliente {
