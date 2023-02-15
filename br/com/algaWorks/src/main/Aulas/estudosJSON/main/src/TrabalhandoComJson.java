@@ -1,5 +1,6 @@
 package br.com.algaWorks.src.main.Aulas.estudosJSON.main.src;
 
+import br.com.algaWorks.src.main.Aulas.estudosJSON.main.src.modelo.Cliente;
 import br.com.algaWorks.src.main.Aulas.estudosJSON.main.src.servico.ServicoCadastroCliente;
 
 public class TrabalhandoComJson {
